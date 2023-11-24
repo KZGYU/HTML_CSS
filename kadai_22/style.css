@@ -1,0 +1,104 @@
+/* 全体のデフォルトマージンを解除 */
+body,
+h1,
+p {
+  margin: 0;
+}
+
+/* 全てのp要素とa要素のフォントサイズを20pxに設定 */
+p,
+a {
+  font-size: 20px;
+}
+
+/* headerのスタイリング */
+header {
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+/* h1のスタイリング */
+header h1 {
+  color: rgb(255, 255, 255);
+}
+
+/* main要素のスタイリング */
+main {
+  padding: 10px;
+}
+
+/* parent要素のスタイリング */
+#parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* contentsクラスのスタイリング */
+.contents {
+  border: 3px solid rgb(238, 204, 204);
+  flex-basis: 25%;
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* h2要素のスタイリング */
+.contents h2 {
+  font-size: 25px;
+  text-decoration: underline dotted rgb(236, 122, 122);
+  position: relative;
+}
+
+.contents h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+  position: absolute;
+  left: -1em;
+}
+
+/* p要素の特定の文字のスタイリング */
+.contents p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+/* img要素のスタイリング */
+.contents img {
+  margin: 10px 0;
+  width: 70%;
+}
+
+/* footer要素のスタイリング */
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+/* a要素のスタイリング */
+footer a {
+  color: rgb(255, 255, 255);
+}
+
+footer a:visited {
+  color: rgb(193, 234, 251);
+}
+
+footer a:hover {
+  color: rgb(245, 178, 168);
+}
+
+/* レスポンシブデザインのブレークポイント設定 */
+@media (max-width: 768px) {
+  .contents {
+    flex-basis: 100%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+}

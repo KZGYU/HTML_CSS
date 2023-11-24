@@ -1,0 +1,10 @@
+.parent {
+  width: 300px;
+  width: auto;
+  background-color: yellow;
+}
+.child {
+  width: 150px;
+  width: auto;
+  background-color: orange;
+}
