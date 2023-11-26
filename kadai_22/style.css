@@ -89,9 +89,9 @@ footer a:hover {
 }
 
 /* レスポンシブデザインのブレークポイント設定 */
-@media (max-width: 768px) {
-  .contents {
-    flex-basis: 100%;
+@media screen and (max-width: 768px) {
+  #parent {
+    flex-direction: column;
   }
 
   h2 {
