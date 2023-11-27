@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ToDoリスト</title>
+    <style>
+      /* 簡単なスタイリング */
+      body {
+        font-family: "Arial", sans-serif;
+      }
+
+      #todoInput {
+        padding: 10px;
+        width: 200px;
+        margin-right: 5px;
+      }
+
+      #addButton {
+        padding: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      li {
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>ToDoリスト</h2>
+
+    <div>
+      <input
+        type="text"
+        id="todoInput"
+        placeholder="タスクをここに入力してください"
+      />
+      <button id="addButton">追加</button>
+      <!-- 全て消去ボタンを追加 -->
+      <button id="clearButton">全て消去</button>
+      <!-- 最後の項目を消去ボタンを追加 -->
+      <button id="removeLastButton">最後の項目を消去</button>
+    </div>
+
+    <ul id="todoList">
+      <!-- ToDoリストの項目がここに追加されます -->
+    </ul>
+
+    <script src="homework.js"></script>
+  </body>
+</html>
